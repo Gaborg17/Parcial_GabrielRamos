@@ -24,9 +24,9 @@ public class GameManager : MonoBehaviour
 
     public void PlayerDied()
     {
+        timeAlive = 0;
         SceneManager.LoadScene("Juego");
         destroyedMeteorites = 0;
-        timeAlive = 0;
     }
 
     public void MeteorDestroyed()

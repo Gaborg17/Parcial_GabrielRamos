@@ -10,8 +10,8 @@ public class ContadorDeTiempo : MonoBehaviour
 
     private void Update()
     {
-        GameManager.Instance.timeAlive = ((int)Time.time);
+        GameManager.Instance.timeAlive += Time.deltaTime;
 
-        timeDisplay.text = "Tiempo Vivo: " + GameManager.Instance.timeAlive;
+        timeDisplay.text = "Tiempo Vivo: " + ((int)GameManager.Instance.timeAlive);
     }
 }
