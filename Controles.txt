@@ -1,0 +1,4 @@
+Controles
+
+Mover: A D
+Disparar: Click Izquierdo del Mouse
